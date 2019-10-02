@@ -1,0 +1,39 @@
+{
+  "name": "sound",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p --env production",
+    "dev": "webpack -p --env development"
+  },
+  "author": "Anders Andersson",
+  "license": "ISC",
+  "dependencies": {
+    "js-tokens": "^5.0.0",
+    "loose-envify": "^1.4.0",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-is": "^16.10.1",
+    "react-sound": "^1.2.0",
+    "soundmanager2": "^2.97.20170602"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.6",
+    "css-loader": "^3.2.0",
+    "file-loader": "4.2.0",
+    "style-loader": "1.0.0",
+    "uglifyjs-webpack-plugin": "2.2.0",
+    "webpack": "4.39.3",
+    "webpack-cli": "3.3.7"
+  }
+}
