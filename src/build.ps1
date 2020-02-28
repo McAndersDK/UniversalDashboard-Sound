@@ -6,6 +6,7 @@ if ($powerShellGet.Version -lt ([Version]'1.6.0')) {
 	Import-Module PowerShellGet -Force
 }
 
+
 Set-Location $BuildFolder
 
 $OutputPath = "$BuildFolder\output\UniversalDashboard.sound"
@@ -26,15 +27,15 @@ Copy-Item $BuildFolder\Scripts $OutputPath\Scripts -Recurse -Force
 $Version = "1.0.0"
 
 $manifestParameters = @{
-	Path = "$OutputPath\UniversalDashboard.sound.psd1"
-	Author = "Anders Andersson"
-	CompanyName = "Ironman Software, LLC"
-	Copyright = "2019 Ironman Software, LLC"
-	RootModule = "UniversalDashboard.sound.psm1"
-	Description = ""
-	ModuleVersion = $Version
-	Tags = @("universaldashboard")
-	ReleaseNotes = "initial Release"
+	Path              = "$OutputPath\UniversalDashboard.sound.psd1"
+	Author            = "Anders Andersson"
+	CompanyName       = "Netcompany A/S"
+	Copyright         = "2020 Netcompany A/S"
+	RootModule        = "UniversalDashboard.sound.psm1"
+	Description       = ""
+	ModuleVersion     = $Version
+	Tags              = @("universaldashboard")
+	ReleaseNotes      = "initial Release"
 	FunctionsToExport = @(
 		"New-UDSound"
 	)

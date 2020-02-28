@@ -10,7 +10,7 @@ module.exports = (env) => {
 
   return {
     entry: {
-      'index' : __dirname + '/components/index.js'
+      'index': __dirname + '/components/index.js'
     },
     output: {
       path: BUILD_DIR,
@@ -20,11 +20,10 @@ module.exports = (env) => {
       library: "sound",
       libraryTarget: 'var'
     },
-    module : {
-      rules : [
+    module: {
+      rules: [
         { test: /\.css$/, loader: "style-loader!css-loader" },
-        { test: /\.(js|jsx)$/, exclude: [/node_modules/, /public/], loader: 'babel-loader'},
-        { test: /\.(eot|ttf|woff2?|otf|svg)$/, loader:'file-loader' }
+        { test: /\.(js|jsx)$/, exclude: [/node_modules/, /public/], loader: 'babel-loader' }
       ]
     },
     externals: {
